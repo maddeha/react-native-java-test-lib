@@ -8,6 +8,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.example.libkmm.DeviceInfo;
+import android.util.Log;
 
 @ReactModule(name = JavaTestLibModule.NAME)
 public class JavaTestLibModule extends ReactContextBaseJavaModule {
