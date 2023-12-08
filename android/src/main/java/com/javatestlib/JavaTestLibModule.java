@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
+import com.example.libkmm.DeviceInfo;
 
 @ReactModule(name = JavaTestLibModule.NAME)
 public class JavaTestLibModule extends ReactContextBaseJavaModule {
@@ -26,7 +27,10 @@ public class JavaTestLibModule extends ReactContextBaseJavaModule {
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
-  public void multiply(double a, double b, Promise promise) {
-    promise.resolve(a * b);
+  public void multiply(String ch, Promise promise) {
+    DeviceInfo deviceInfo = new DeviceInfo();
+    String result = ch + deviceInfo.getDeviceInfo();
+    Log.w("ConcatenatedString", result);
+    promise.resolve(result);
   }
 }

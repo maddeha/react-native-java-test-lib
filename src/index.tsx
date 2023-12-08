@@ -17,6 +17,6 @@ const JavaTestLib = NativeModules.JavaTestLib
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return JavaTestLib.multiply(a, b);
+export async function multiply(ch: string): Promise<string> {
+  return JavaTestLib.multiply(ch);
 }
