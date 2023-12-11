@@ -1,6 +1,6 @@
 {
   "name": "react-native-java-test-lib",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "test description",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
