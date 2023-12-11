@@ -2,7 +2,7 @@
 
 @interface RCT_EXTERN_MODULE(JavaTestLib, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(String)ch
+RCT_EXTERN_METHOD(multiply:(NSString)ch
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 

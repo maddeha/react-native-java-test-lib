@@ -2,7 +2,7 @@
 class JavaTestLib: NSObject {
 
   @objc(multiply:withResolver:withRejecter:)
-  func multiply(ch: String, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
+  func multiply(ch: NSString, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
     resolve(ch)
   }
 }
