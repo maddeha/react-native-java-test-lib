@@ -80,7 +80,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-device-info": "^10.12.0"
   },
   "workspaces": [
     "example"
@@ -164,8 +165,5 @@
   },
   "directories": {
     "example": "example"
-  },
-  "dependencies": {
-    "react-native-device-info": "^10.12.0"
   }
 }
