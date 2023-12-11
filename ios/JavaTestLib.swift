@@ -1,9 +1,9 @@
 @objc(JavaTestLib)
 class JavaTestLib: NSObject {
 
-  @objc(multiply:withB:withResolver:withRejecter:)
+  @objc(multiply:withResolver:withRejecter:)
   func multiply(ch: String, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    resolve(ch + 'test')
+    resolve(ch)
   }
 }
 
