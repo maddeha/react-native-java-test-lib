@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 const LINKING_ERROR =
   `The package 'react-native-java-test-lib' doesn't seem to be linked. Make sure: \n\n` +
@@ -18,5 +19,6 @@ const JavaTestLib = NativeModules.JavaTestLib
     );
 
 export async function multiply(ch: string): Promise<string> {
+  console.log('testlib', DeviceInfo.getDeviceId());
   return JavaTestLib.multiply(ch);
 }
